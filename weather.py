@@ -18,13 +18,14 @@ def get_weather(city_id):
     if temp == feels_like:
         print(f"Feels like the actual temperature.")
     elif temp >= feels_like:
-        print(f"Feels higher than actual temperature at {feels_like}.")
+        print(f"Feels lower than the actual temperature at {feels_like} degrees.")
     elif temp <= feels_like:
-        print(f"Feels lower than actual temperature at {feels_like}.")
+        print(f"Feels higher than the actual temperature at {feels_like} degrees.")
     else:
         print(f"Failed to compare to actual temp.")
 
     print(f"The current humidity is {humid}%\n")
+
 
 print("\nWelcome to Jonathan's Weather App!")
 print("----------------------------------------------")
@@ -32,3 +33,5 @@ city_id = input("Input a city: ")
 print("\n")
 
 get_weather(city_id)
+
+
